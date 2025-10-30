@@ -15,7 +15,7 @@ uv add openai
 uv run main.py
 uv run --env-file ../.env simple01.py 
 
-
+# Normal Pyhton
 source .venv/bin/activate
 python simple01.py
 ```
