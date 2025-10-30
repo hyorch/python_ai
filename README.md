@@ -20,4 +20,5 @@ source .venv/bin/activate
 python simple01.py
 ```
 
-
+## Referencias
+https://github.com/openai/openai-agents-python?tab=readme-ov-file
