@@ -1,6 +1,7 @@
-""" 
+"""
 Example OpenAI Agent using the openai-agents library.
 """
+
 import asyncio
 from agents import Agent, Runner
 
