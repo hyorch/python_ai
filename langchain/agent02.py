@@ -6,15 +6,19 @@ from pydantic import BaseModel
 from langchain.agents import create_agent
 from langchain.agents.structured_output import ToolStrategy
 
+
 class WeatherResponse(BaseModel):
     """
     Define a Pydantic model for the structured response
     """
+
     weather: str
+
 
 def get_weather(city: str) -> WeatherResponse:
     """Get weather for a given city."""
     return WeatherResponse(weather=f"It's always sunny in {city}!")
+
 
 agent = create_agent(
     model="openai:gpt-5-mini",
