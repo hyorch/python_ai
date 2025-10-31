@@ -1,9 +1,15 @@
+"""
+Example of creating and running an agent with LangChain using structured output.
+"""
+
 from pydantic import BaseModel
 from langchain.agents import create_agent
 from langchain.agents.structured_output import ToolStrategy
 
-
 class WeatherResponse(BaseModel):
+    """
+    Define a Pydantic model for the structured response
+    """
     weather: str
 
 def get_weather(city: str) -> WeatherResponse:

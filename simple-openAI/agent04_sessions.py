@@ -1,12 +1,11 @@
 """
 A simple agent that maintains session state across multiple interactions.
-""" 
-
+"""
 import asyncio
 from agents import Agent, Runner, SQLiteSession
 
 async def main():
-    # Create agent
+    """Run an agent with session management."""
     agent = Agent(
         name="Assistant",
         instructions="Reply very concisely.",

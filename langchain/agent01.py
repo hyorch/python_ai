@@ -1,5 +1,7 @@
+""" 
+Example of creating and running an agent with LangChain.
+"""
 from langchain.agents import create_agent
-
 
 def get_weather(city: str) -> str:
     """Get weather for a given city."""
