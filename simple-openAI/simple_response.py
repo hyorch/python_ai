@@ -1,3 +1,7 @@
+""" 
+Example OpenAI Agent using the openai-agents library.
+"""
+
 from openai import OpenAI
 client = OpenAI()
 

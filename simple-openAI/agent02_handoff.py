@@ -1,5 +1,8 @@
-from agents import Agent, Runner
+""" 
+Example OpenAI Agent using the openai-agents library.
+"""
 import asyncio
+from agents import Agent, Runner
 
 spanish_agent = Agent(
     name="Spanish agent",
@@ -20,6 +23,7 @@ triage_agent = Agent(
 
 
 async def main():
+    """Main function"""
     result = await Runner.run(triage_agent, input="Hello, how are you?")
     print(result.final_output)
     # ¡Hola! Estoy bien, gracias por preguntar. ¿Y tú, cómo estás?
@@ -27,4 +31,3 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
-    
