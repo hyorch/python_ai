@@ -41,4 +41,4 @@ jobs:
         run: ruff --version
 
       - name: Run ruff (lint entire repo)
-        run: ruff check . --format github --statistics
+        run: ruff check --output-format github --statistics
