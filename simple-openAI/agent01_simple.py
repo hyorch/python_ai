@@ -1,10 +1,15 @@
-""" 
+"""
 Example OpenAI Agent using the openai-agents library.
 """
+
 from agents import Agent, Runner
 
-agent = Agent(name="MyAgent", model="gpt-4",instructions="You are a helpful assistant.")
+agent = Agent(
+    name="MyAgent", model="gpt-4", instructions="You are a helpful assistant."
+)
 
-result = Runner.run_sync(agent, "Summarize the plot of 'Romeo and Juliet' in two sentences.")
+result = Runner.run_sync(
+    agent, "Summarize the plot of 'Romeo and Juliet' in two sentences."
+)
 
 print(result.final_output)
